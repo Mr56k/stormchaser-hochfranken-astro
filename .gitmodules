@@ -1,0 +1,3 @@
+[submodule "dist"]
+	path = dist
+	url = https://github.com/Mr56k/stormchaser-hochfranken-dist.git
