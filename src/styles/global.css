@@ -1,3 +1,31 @@
 body {
     font-family: 'Lora Variable', sans-serif;
 }
+
+.content h1 {
+   @apply text-4xl my-10;
+ }
+
+.content h2 {
+    @apply text-3xl my-8;
+}
+
+.content h3 {
+    @apply text-2xl my-5;
+}
+
+.content h4 {
+    @apply text-xl my-4;
+}
+
+.content p {
+    @apply text-lg my-2;
+}
+
+.content a, a:visited {
+    @apply text-amber-400;
+}
+
+.content a:hover {
+    @apply underline
+}
