@@ -24,7 +24,7 @@ export interface Props {
     <title>{title}</title>
 </head>
 
-<body class="flex h-screen">
+<body class="flex h-screen overflow-hidden">
 <!-- Sidebar -->
 <div class="w-1/3 bg-cover bg-center flex flex-col" style="background-image: url('/img/sunset.jpg')">
     <!-- Sidebar content -->
@@ -45,7 +45,9 @@ export interface Props {
 <div class="flex-1 overflow-scroll" >
     <!-- Main content goes here -->
     <Navbar />
-    <slot />
+    <div class="mx-auto max-w-5xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        <slot />
+    </div>
     <Footer />
 </div>
 
