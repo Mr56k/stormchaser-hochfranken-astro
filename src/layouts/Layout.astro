@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import '@fontsource-variable/lora';
 import '../styles/global.css'
 import SocialMedia from "../components/SocialMedia.astro";
+import Navbar from "../components/Navbar.astro";
 
 export interface Props {
     title?: string;
@@ -43,6 +44,7 @@ export interface Props {
 <!-- Main Content -->
 <div class="flex-1 overflow-scroll" >
     <!-- Main content goes here -->
+    <Navbar />
     <slot />
     <Footer />
 </div>

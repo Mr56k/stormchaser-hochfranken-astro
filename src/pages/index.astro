@@ -1,9 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import QuoteBox from "../components/QuoteBox.astro";
 ---
 
 <Layout>
 	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-		<h1 class="text-3xl font-bold">Hallo Welt!</h1>
+		<h1 class="text-3xl font-bold text-center mb-20">Herzlich Willkommen!</h1>
+		<QuoteBox
+			quote="So etwas wie schlechtes Wetter gibt es nicht, nur verschiedene Arten von gutem Wetter."
+			author="John Ruskin"
+			position="Britischer Schriftsteller und Kunstkritiker"
+		/>
 	</div>
 </Layout>
