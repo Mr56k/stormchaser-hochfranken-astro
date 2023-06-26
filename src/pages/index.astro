@@ -1,23 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 import QuoteBox from "../components/QuoteBox.astro";
 import WindyMap from "../components/WindyMap.astro";
+import Weather from "../components/Weather.astro";
 ---
 
 <Layout>
     <h1 class="text-center mb-20">Herzlich Willkommen!</h1>
     <QuoteBox
-            quote="So etwas wie schlechtes Wetter gibt es nicht, nur verschiedene Arten von gutem Wetter."
-            author="John Ruskin"
-            position="Britischer Schriftsteller und Kunstkritiker"
+        quote="So etwas wie schlechtes Wetter gibt es nicht, nur verschiedene Arten von gutem Wetter."
+        author="John Ruskin"
+        position="Britischer Schriftsteller und Kunstkritiker"
     />
-    <WindyMap/>
+    <WindyMap />
     <div class="my-10">
-        <p>Als leidenschaftlicher und schon immer am Wettergeschehen interessierter Amateurastronom
-            fand ich 2019 meine Alternative für Tage, an denen es keinen klaren Himmel gibt! Das Stormchasing!</p>
-        <p>Da ich fast 90% meines Lebens in den Landkreisen Wunsiedel und Hof verbracht habe und
-            auch dort auf die Jagd gehen möchte, bot sich die Bezeichnung der Region „Hochfranken“ förmlich an.</p>
-        <p>Begleite mich auf meiner Reise vom absoluten Neuling bis zum (hoffentlich) versierten
-            Stormchaser.</p>
+        <p>
+            Als leidenschaftlicher und schon immer am Wettergeschehen
+            interessierter Amateurastronom fand ich 2019 meine Alternative für
+            Tage, an denen es keinen klaren Himmel gibt! Das Stormchasing!
+        </p>
+        <p>
+            Da ich fast 90% meines Lebens in den Landkreisen Wunsiedel und Hof
+            verbracht habe und auch dort auf die Jagd gehen möchte, bot sich die
+            Bezeichnung der Region „Hochfranken“ förmlich an.
+        </p>
+        <p>
+            Begleite mich auf meiner Reise vom absoluten Neuling bis zum
+            (hoffentlich) versierten Stormchaser.
+        </p>
     </div>
+    <!-- Hof -->
+    <Weather location_id="026185" />
+    <!-- Wunsiedel -->
+    <Weather location_id="030418" />
 </Layout>
