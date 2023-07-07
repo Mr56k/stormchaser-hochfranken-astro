@@ -1,18 +1,25 @@
 ---
-import Layout from "../../layouts/Layout.astro"
-import BlogOverview from "../../components/BlogOverview.astro"
+import Layout from "../../layouts/Layout.astro";
+import BlogOverview from "../../components/BlogOverview.astro";
+import Fancybox from "../../components/Fancybox.astro";
 ---
+
 <Layout title="Blog">
-    <div class="bg-white my-10 sm:my-6">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:max-w-4xl">
-            <h1>News und Blogbeiträge</h2>
-            <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-                <BlogOverview />
-              <!-- More posts... -->
-            </div>
-          </div>
+  <div class="bg-white my-10 sm:my-6">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <h1>News und Blogbeiträge</h1>
+        <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
+          <BlogOverview />
+          <!-- More posts... -->
+          <Fancybox
+            images={[
+              "https://lipsum.app/id/31/1800x1200",
+              "https://lipsum.app/id/32/1800x1200",
+            ]}
+          />
         </div>
       </div>
-      
+    </div>
+  </div>
 </Layout>
