@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/image": "^0.17.1",
     "@astrojs/markdoc": "^0.4.4",
+    "@astrojs/node": "^5.3.5",
     "@astrojs/react": "^2.2.2",
     "@astrojs/tailwind": "^4.0.0",
     "@fancyapps/ui": "^5.0.20",
