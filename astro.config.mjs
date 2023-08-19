@@ -9,6 +9,8 @@ import markdoc from "@astrojs/markdoc";
 export default defineConfig({
   integrations: [image(), tailwind(), react(), markdoc()],
   output: 'hybrid',
+  outDir: './dist/httpdocs',
+
   adapter: node({
     mode: 'standalone',
   }),
