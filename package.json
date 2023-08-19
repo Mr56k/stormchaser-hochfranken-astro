@@ -11,10 +11,18 @@
   },
   "dependencies": {
     "@astrojs/image": "^0.17.1",
+    "@astrojs/markdoc": "^0.4.4",
+    "@astrojs/react": "^2.2.2",
     "@astrojs/tailwind": "^4.0.0",
     "@fancyapps/ui": "^5.0.20",
     "@fontsource-variable/lora": "^5.0.4",
-    "astro": "^2.7.0",
+    "@keystatic/astro": "^0.0.9",
+    "@keystatic/core": "^0.0.116",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.10.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.2"
   }
 }

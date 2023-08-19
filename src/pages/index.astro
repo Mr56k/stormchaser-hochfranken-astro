@@ -1,12 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from "../layouts/Layout.astro";
 import QuoteBox from "../components/QuoteBox.astro";
 import WindyMap from "../components/WindyMap.astro";
 import Weather from "../components/Weather.astro";
 import Fancybox from "../components/Fancybox.astro";
+
+const posts = await getCollection('posts');
 ---
 
 <Layout>
+    <pre>{JSON.stringify(posts, null, 2)}</pre>
     <h1 class="text-center mb-20">Herzlich Willkommen!</h1>
     <QuoteBox
         quote="So etwas wie schlechtes Wetter gibt es nicht, nur verschiedene Arten von gutem Wetter."
